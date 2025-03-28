@@ -1,0 +1,270 @@
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 0.3s ease-out;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .list-group-item input {
+    margin-right: 10px;
+  }
+
+  .list-group-item .form-control {
+    max-width: 300px;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .list-group-item .btn {
+    min-width: 60px;  
+    padding: 0.25rem 0.5rem;  
+    transition: all 0.2s ease !important;
+  }
+ 
+  .app-title h1 {
+    font-size: 3.8rem;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: default;
+  }
+  
+  .title-word {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .title-word:hover {
+    transform: translateY(-5px);
+  }
+  
+  .title-word {
+    background: linear-gradient(45deg, #079cb6, #3784dd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+  
+  .app-title p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .app-title h1 {
+    animation: none;
+  }
+  
+  .app-title {
+    animation: slideDown 0.5s ease-out;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .theme-toggle-wrapper {
+    position: fixed;
+    top: 1.5rem;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .theme-toggle-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-toggle-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .app-title {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .container {
+    padding-top: 0;
+  }
+  
+  .header-section {
+    padding: 2.5rem 0 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .list-group-item {
+    animation: slideIn 0.3s ease-out;
+    transition: all 0.3s ease;
+  }
+  
+  .list-group-item .form-control {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .list-group-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .form-check-input {
+    transition: all 0.2s ease;
+  }
+  
+  .list-group-item span {
+    transition: all 0.3s ease;
+  }
+  
+  .btn {
+    transition: all 0.2s ease !important;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .btn:active {
+    transform: translateY(0);
+  }
+  
+  .list-group-item .d-flex.gap-2 {
+    transition: all 0.3s ease;
+  }
+  
+  .mt-3 {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .form-check-input:checked {
+    transform: scale(1.1);
+  }
+  
+  .app-title h1 {
+    background: linear-gradient(45deg, #342ab8, #7f36d3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+  
+  .app-title h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, #bb35a9, #c43743);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .app-title h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .app-title h1 {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .app-title h1 .rocket {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-left: 5px;
+  }
+  
+  .app-title h1:hover .rocket {
+    transform: translateY(-10px) rotate(45deg);
+  }
+  .btn-primary{
+    background-color: #079cb6;
+
+  }
+  .btn-danger{
+    background-color: #c43743;
+  }
